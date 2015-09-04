@@ -3,7 +3,7 @@ import re
 def word_frequency(text):
     word_count = {}
     for word in text:
-	       words =re.sub(r'[,.!-?0-9A-Za-z]', "", text).lower().split()
+	       words =re.sub(r'[,.!-?0-9]', "", text).lower().split()
     for word in word_count:
                word_count[word]+=1
 	       else:
